@@ -43,20 +43,46 @@ export default function Home() {
       {/* Footer / Credits */}
       <footer className="relative z-20 flex flex-col items-center gap-4 text-gray-500 text-[10px] tracking-widest font-montserrat pb-8">
         <span className="uppercase">December 18, 2026</span>
-        <a
-          href="https://AkileshJayakumar.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
-        >
+        <div className="flex items-center gap-2 text-gray-400">
           <span className="lowercase text-[10px] tracking-widest font-sans">
             made by
           </span>
           <span className="text-lg">👨‍💻</span>
-          <span className="lowercase text-sm tracking-normal underline decoration-1 underline-offset-4 font-sans">
+          <a
+            href="https://AkileshJayakumar.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="lowercase text-sm tracking-normal underline decoration-1 underline-offset-4 font-sans hover:text-white transition-colors"
+          >
             akileshjayakumar.com
-          </span>
-        </a>
+          </a>
+
+          {/* Pipe Separator */}
+          <span className="text-gray-600 mx-1">|</span>
+
+          {/* Twitter Handle with Creative X Design */}
+          <a
+            href="https://x.com/sentrytoast"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-1.5 text-gray-400 hover:text-doom-green transition-all duration-300"
+          >
+            <div className="relative flex items-center justify-center w-5 h-5">
+              {/* Glowing background on hover */}
+              <div className="absolute inset-0 bg-doom-green rounded-full opacity-0 group-hover:opacity-20 blur-sm transition-opacity duration-300" />
+              {/* X Icon */}
+              <svg
+                className="w-3.5 h-3.5 fill-current group-hover:scale-110 transition-transform duration-300"
+                viewBox="0 0 24 24"
+              >
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </div>
+            <span className="text-xs tracking-wide font-sans group-hover:underline underline-offset-4 decoration-doom-green/50">
+              @sentrytoast
+            </span>
+          </a>
+        </div>
       </footer>
     </main>
   );
