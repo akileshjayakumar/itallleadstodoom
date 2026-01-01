@@ -17,9 +17,6 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Avengers: Doomsday Countdown",
   description: "Countdown to the end.",
-  icons: {
-    icon: "/avengers-logo.png",
-  },
 };
 
 export default function RootLayout({
