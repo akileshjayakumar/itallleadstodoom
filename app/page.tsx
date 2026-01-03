@@ -83,6 +83,13 @@ export default function Home() {
             </span>
           </a>
         </div>
+
+        <p className="mt-8 max-w-[90%] md:max-w-2xl text-center text-[10px] md:text-xs text-gray-500/80 leading-relaxed font-sans px-4 select-none opacity-90 hover:opacity-100 transition-opacity duration-300">
+          This is an unofficial fan-made project. Avengers: Doomsday, Marvel,
+          and all related characters and concepts are property of Marvel Studios
+          and The Walt Disney Company. This site is not affiliated with or
+          endorsed by Marvel or Disney.
+        </p>
       </footer>
     </main>
   );
