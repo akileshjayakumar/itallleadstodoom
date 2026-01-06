@@ -84,11 +84,22 @@ export default function Home() {
           </a>
         </div>
 
-        <p className="mt-8 max-w-[90%] md:max-w-2xl text-center text-[10px] md:text-xs text-gray-500/80 leading-relaxed font-sans px-4 select-none opacity-90 hover:opacity-100 transition-opacity duration-300">
+        <p className="mt-8 max-w-[90%] md:max-w-4xl text-center text-[10px] md:text-xs text-gray-400 leading-relaxed font-sans px-4 select-none">
           This is an unofficial fan-made project. Avengers: Doomsday, Marvel,
           and all related characters and concepts are property of Marvel Studios
           and The Walt Disney Company. This site is not affiliated with or
           endorsed by Marvel or Disney.
+        </p>
+        <p className="mt-2 text-center text-[10px] md:text-xs text-gray-400/80 font-sans px-4 select-none">
+          marvel icons used from{" "}
+          <a
+            href="https://www.flaticon.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-1 underline-offset-2 hover:text-white transition-colors"
+          >
+            flaticon
+          </a>
         </p>
       </footer>
     </main>

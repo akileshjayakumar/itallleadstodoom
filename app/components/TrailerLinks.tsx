@@ -8,13 +8,19 @@ const links = [
     title: "Steve Rogers",
     subtitle: "Character Teaser",
     url: "https://www.youtube.com/watch?v=UiMg566PREA",
-    icon: "/captain_america.svg",
+    icon: "/captain_america.png",
   },
   {
     title: "Thor Odinson",
     subtitle: "Character Teaser",
     url: "https://www.youtube.com/watch?v=1clWprLC5Ak",
-    icon: "/thor.svg",
+    icon: "/thor.png",
+  },
+  {
+    title: "X-Men",
+    subtitle: "Character Teaser",
+    url: "https://www.youtube.com/watch?v=kH1XlwHQv9o",
+    icon: "/xmen.png",
   },
 ];
 
@@ -60,7 +66,7 @@ function TrailerLink({
       </div>
 
       <div className="flex flex-col items-start gap-0.5 grow">
-        <span className="text-gray-200 font-bold group-hover:text-white transition-colors duration-300 font-cinzel text-sm tracking-widest uppercase">
+        <span className="text-gray-200 font-bold group-hover:text-white transition-colors duration-300 font-cinzel text-sm tracking-widest">
           {title}
         </span>
         <span className="text-[10px] text-gray-500 group-hover:text-doom-green-dim transition-colors uppercase">
