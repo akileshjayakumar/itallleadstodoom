@@ -6,7 +6,7 @@ import { TrailerLinks } from "./components/TrailerLinks";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-between bg-black selection:bg-doom-green selection:text-black overflow-x-hidden">
+    <main className="relative h-screen flex flex-col items-center justify-between bg-black selection:bg-doom-green selection:text-black overflow-hidden">
       {/* Background Poster */}
       <div
         className="fixed inset-0 bg-[url('/poster.png')] bg-cover bg-center opacity-40 z-0"
@@ -21,12 +21,12 @@ export default function Home() {
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,var(--doom-green)_0%,transparent_70%)] opacity-20 blur-3xl pointer-events-none z-0" />
 
       {/* Content Wrapper */}
-      <div className="relative z-10 flex flex-col items-center w-full max-w-6xl px-4 py-20 md:py-32 grow justify-center">
+      <div className="relative z-10 flex flex-col items-center w-full max-w-6xl px-4 py-8 md:py-12 grow justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="mb-12 relative w-full h-auto max-w-3xl flex justify-center"
+          className="mb-6 relative w-full h-auto max-w-3xl flex justify-center"
         >
           {/* Using img tag for simplicity with the uploaded asset */}
           <img
@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       {/* Footer / Credits */}
-      <footer className="relative z-20 flex flex-col items-center gap-4 text-gray-500 text-[10px] tracking-widest font-montserrat pb-8">
+      <footer className="relative z-20 flex flex-col items-center gap-2 text-gray-500 text-[10px] tracking-widest font-montserrat pb-4">
         <span className="uppercase">December 18, 2026</span>
         <div className="flex items-center gap-2 text-gray-400">
           <span className="lowercase text-[10px] tracking-widest font-sans">
@@ -84,7 +84,7 @@ export default function Home() {
           </a>
         </div>
 
-        <p className="mt-8 max-w-[90%] md:max-w-4xl text-center text-[10px] md:text-xs text-gray-400 leading-relaxed font-sans px-4 select-none">
+        <p className="mt-3 max-w-[90%] md:max-w-4xl text-center text-[10px] md:text-xs text-gray-400 leading-relaxed font-sans px-4 select-none">
           This is an unofficial fan-made project. Avengers: Doomsday, Marvel,
           and all related characters and concepts are property of Marvel Studios
           and The Walt Disney Company. This site is not affiliated with or

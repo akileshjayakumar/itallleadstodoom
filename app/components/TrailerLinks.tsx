@@ -26,7 +26,7 @@ const links = [
 
 export function TrailerLinks() {
   return (
-    <div className="flex flex-col md:flex-row gap-6 mt-16 z-10 font-montserrat tracking-widest text-xs">
+    <div className="flex flex-col md:flex-row gap-6 mt-20 z-10 font-montserrat tracking-widest text-xs">
       {links.map((link, index) => (
         <TrailerLink key={index} {...link} index={index} />
       ))}
