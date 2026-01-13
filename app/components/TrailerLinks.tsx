@@ -22,11 +22,17 @@ const links = [
     url: "https://www.youtube.com/watch?v=kH1XlwHQv9o",
     icon: "/xmen.png",
   },
+  {
+    title: "The Wakandans And The Fantastic Four",
+    subtitle: "Character Teaser",
+    url: "https://www.youtube.com/watch?v=399Ez7WHK5s",
+    icon: "/avengers-logo.png",
+  },
 ];
 
 export function TrailerLinks() {
   return (
-    <div className="flex flex-col md:flex-row gap-6 mt-20 z-10 font-montserrat tracking-widest text-xs">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 z-10 font-montserrat text-xs max-w-4xl mx-auto">
       {links.map((link, index) => (
         <TrailerLink key={index} {...link} index={index} />
       ))}
@@ -55,7 +61,7 @@ function TrailerLink({
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1 + index * 0.2, duration: 0.8 }}
-      className="group flex items-center gap-4 px-6 py-4 border border-white/10 bg-white/5 rounded-lg hover:bg-white/10 hover:border-doom-green/50 transition-all duration-300 backdrop-blur-sm w-full md:w-auto min-w-[280px]"
+      className="group flex items-center gap-4 px-6 py-4 border border-white/10 bg-white/5 rounded-lg hover:bg-white/10 hover:border-doom-green/50 transition-all duration-300 backdrop-blur-sm w-full"
     >
       <div className="relative w-10 h-10 flex items-center justify-center border border-white/20 rounded-full group-hover:border-doom-green group-hover:bg-doom-green/10 transition-colors duration-300 shrink-0">
         <img
@@ -66,7 +72,7 @@ function TrailerLink({
       </div>
 
       <div className="flex flex-col items-start gap-0.5 grow">
-        <span className="text-gray-200 font-bold group-hover:text-white transition-colors duration-300 font-cinzel text-sm tracking-widest">
+        <span className="text-gray-200 font-bold group-hover:text-white transition-colors duration-300 font-cinzel text-sm">
           {title}
         </span>
         <span className="text-[10px] text-gray-500 group-hover:text-doom-green-dim transition-colors uppercase">
