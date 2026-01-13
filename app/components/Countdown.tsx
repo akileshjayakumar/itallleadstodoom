@@ -83,24 +83,24 @@ export function Countdown() {
   }, []);
 
   return (
-    <div className="text-center z-10 relative">
+    <div className="text-center z-10 relative w-full px-2">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="text-doom-green text-sm tracking-[0.5em] mb-4 font-bold uppercase drop-shadow-[0_0_10px_rgba(79,240,120,0.5)]"
+        className="text-doom-green text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.5em] mb-6 sm:mb-4 font-bold uppercase drop-shadow-[0_0_10px_rgba(79,240,120,0.5)] px-2"
       >
         It All Leads To Doom
       </motion.div>
-      <div className="flex gap-2 md:gap-4 justify-center items-start font-mono text-white">
+      <div className="flex gap-1 sm:gap-2 md:gap-4 justify-center items-start font-mono text-white flex-wrap">
         <TimeUnit value={timeLeft.months} label="MONTHS" />
-        <span className="text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
+        <span className="text-3xl sm:text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
         <TimeUnit value={timeLeft.days} label="DAYS" />
-        <span className="text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
+        <span className="text-3xl sm:text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
         <TimeUnit value={timeLeft.hours} label="HOURS" />
-        <span className="text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
+        <span className="text-3xl sm:text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
         <TimeUnit value={timeLeft.minutes} label="MINUTES" />
-        <span className="text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
+        <span className="text-3xl sm:text-4xl md:text-7xl font-bold text-white leading-none self-start pt-0">:</span>
         <TimeUnit value={timeLeft.seconds} label="SECONDS" />
       </div>
     </div>
@@ -117,16 +117,16 @@ function TimeUnit({ value, label }: { value: number; label: string }) {
     : String(displayValue).padStart(2, "0");
   
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
       <motion.span
         key={displayValue}
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="text-4xl md:text-7xl font-bold text-white font-mono"
+        className="text-3xl sm:text-4xl md:text-7xl font-bold text-white font-mono leading-none"
       >
         {formattedValue}
       </motion.span>
-      <span className="text-xs md:text-sm tracking-widest text-white uppercase mt-2 font-sans">
+      <span className="text-[10px] sm:text-xs md:text-sm tracking-wider sm:tracking-widest text-white uppercase mt-1.5 sm:mt-2 font-sans">
         {label}
       </span>
     </div>
