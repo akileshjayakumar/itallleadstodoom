@@ -1,8 +1,10 @@
+<p align="center">
+  <img src="public/logo.png" width="400" alt="Avengers: Doomsday Logo" />
+</p>
+
 # It All Leads to Doom
 
 A fan-made Next.js countdown site for Marvel Studios' *Avengers: Doomsday* release on **December 18, 2026**.
-
-> Unofficial project for educational and portfolio purposes. Not affiliated with Marvel Studios or The Walt Disney Company.
 
 ## Quick Start
 
@@ -52,6 +54,10 @@ Project commands:
 ```bash
 npm run lint
 ```
+
+## Disclaimer
+
+> **Disclaimer:** This is an unofficial fan-made educational project. Marvel, the Avengers, and all related characters and concepts are property of Marvel Studios and The Walt Disney Company. This site is not affiliated with or endorsed by Marvel or Disney.
 
 ## License
 
